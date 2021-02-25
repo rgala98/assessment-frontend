@@ -1,0 +1,177 @@
+.top {
+  width: 100%;
+  background-image: url("https://imgur.com/tOnsj2F.png");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.studentDetails {
+  padding: 10rem 0;
+}
+
+.form {
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: solid 1px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+}
+
+.form:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid greenyellow;
+}
+
+.form:focus:invalid {
+  border-bottom: 3px solid red;
+}
+
+.form__group {
+  margin-bottom: 1rem;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all 0.4s;
+}
+
+.form__label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.4s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.form__image {
+  content: "";
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  left: 50%;
+  border: 1px solid black;
+}
+
+.form__button {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.form__button_red {
+  background-color: orangered;
+}
+
+.form__button_green {
+  background-color: green;
+}
+
+.form__button_yellow {
+  background-color: burlywood;
+}
+
+.form__radio_group {
+  width: 50%;
+  display: inline-block;
+}
+
+.form__radio_input {
+  display: none;
+}
+
+.form__radio_label {
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.form__radio_button {
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid lightcyan;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+}
+
+.form__radio_button::after {
+  content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightcyan;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.form__radio_input:checked ~ .form__radio_label .form__radio_button::after {
+  opacity: 1;
+}
+
+/* 
+DATABASE DISPLAY STLYLING 
+*/
+
+.database {
+  width: 100%;
+  height: 50rem;
+margin-top: 2rem;
+  --ag-foreground-color: black;
+}
+
+.studentDatabase{
+  border: 1px solid black;
+  margin-top: 10rem;
+  border-radius: 1rem;
+}
+
+.studentDatabase > h1{
+  text-align: center;
+  font-size: 6rem;
+}
+
+.button{
+  margin-top: 10rem;
+  width: 20rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+

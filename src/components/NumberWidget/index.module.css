@@ -1,0 +1,25 @@
+.component {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #555a85;
+  border: 0.5px solid #e7e8ea;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.num {
+  flex-basis: 33%;
+  color: #e7e8ea;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.num:hover,
+.num:active {
+  transform: scale(1.5);
+  color: #fff;
+}

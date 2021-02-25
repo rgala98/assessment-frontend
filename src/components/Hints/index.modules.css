@@ -1,0 +1,30 @@
+.component {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.component > button {
+  padding: 12px 28px;
+  background-color: transparent;
+  border: 1px solid #5778f2;
+  border-radius: 10px;
+  color: #e7e8ea;
+  font-size: 14px;
+  cursor: pointer;
+}
+.component > button:hover,
+.component > button:active {
+  background-color: #2e3157;
+}
+
+
+
+h1{
+  color: white;
+}
+
+

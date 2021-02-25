@@ -1,0 +1,23 @@
+.component {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.inpGroup {
+  margin: 1rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.inpGroup > input {
+  margin-right: 1rem;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+}
+
+.inpGroup > label {
+  color: #e7e8ea;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}

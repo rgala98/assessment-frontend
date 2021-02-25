@@ -1,0 +1,45 @@
+.table {
+  border-collapse: collapse;
+  background-color: #abafe7;
+  margin: 2rem 0;
+}
+.table tr:nth-child(3n) {
+  border-bottom: 2px solid #000;
+}
+.table tr:nth-last-child(3n) {
+  border-top: 2px solid #000;
+}
+.table td:nth-child(3n) {
+  border-right: 2px solid #000;
+}
+.table td:nth-last-child(3n) {
+  border-left: 2px solid #000;
+}
+
+.table td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.table td:hover,
+.table td:active {
+  background-color: #5778f2;
+  color: #202340;
+}
+
+.computed {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  cursor: default !important;
+}
+.computed:hover,
+.computed:active {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #000000 !important;
+}

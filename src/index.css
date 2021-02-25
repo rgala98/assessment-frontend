@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* Declaring the root font-sie to 10px makes it easier to calcuate rem values
+      1 rem = 10px
+      rem is better coz its always related to root font-size 
+      so if the size of the devices are changed, it is easier to scale every element */
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%; } }
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%; } }
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%; } }
+/*
+General Sizing
+0 - 600px: Phone
+600 - 900px: Tablet in potrait mode
+900 - 1200px: Tablet in landscape mode
+1200 - 1800px: normal styles of desktop
+1800px ++ : Big Desktop
+
+*/
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ag-theme-material {
+
+  border-radius: 10rem;
+}
